@@ -15,8 +15,8 @@
           ?>
               <div class="panel panel-default">
               <div class="panel-body">
-                <a href="<?php echo base_url().'monsters/'.$monsters[$i]['id'] ?>">Modify</a>
-                <a href="<?php echo base_url().'monsters/delete/'.$monsters[$i]['id'] ?>">Delete</a>
+                <a href="<?php echo base_url().'monsters/'.$monsters[$i]['id'] ?>">Details</a>
+
                 <li id="item<?php echo $i?>"><?php echo $monsters[$i]['picture']?></li>
                 <li id="item<?php echo $i?>"><?php echo $monsters[$i]['name']?></li>
                 <li id="item<?php echo $i?>"><?php echo $monsters[$i]['level']?></li>
@@ -33,6 +33,7 @@
 
         <div class="panel panel-default">
         <div class="panel-body">
+        <a id="delete" data-value="<?php echo $monster['id'];  ?>" href="<?php echo base_url(). 'monsters/delete/'.$monster['id'];?>">Delete</a>
         <li id="item"><?php echo $monster['picture']?></li>
         <li id="item"><?php echo $monster['name']?></li>
         <li id="item"><?php echo $monster['level']?></li>

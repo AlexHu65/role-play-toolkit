@@ -10,4 +10,25 @@ $(document).ready(function(){
 
 	});
 
+	$( "#delete" ).click(function() {
+		if(!confirm('Are you sure that you want to delete monster?')){
+			
+		}
+
+
+
+	// $.ajax({
+  //           url: 'http://localhost:8888/role-play-toolkit/monsters/delete',
+  //           type: 'POST',
+  //           data: {'id': $('#delete').data('value')},
+	// 					success: function(data){
+	// 						alert(data);
+	// 					}
+	//
+	// 				});
+
+
+
+		});
+
 });
