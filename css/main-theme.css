@@ -1,36 +1,47 @@
 body {
-	background:url(http://localhost:8888/role-play-toolkit/img/bg.png); /* background image */
-	background-repeat:repeat;
-  background-attachment: fixed;
+    background: url(http://localhost:8080/role-play-toolkit/img/bg.png); /* background image */
+    background-repeat: repeat;
+    background-attachment: fixed;
 
-	font-family:helvetica, arial, sans-serif;
-	line-height:20px;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 20px;
 }
 
-#heroes #heroes-list
-{
-  list-style: none;
-  text-align: left;
-  font-size: small;
+#heroes #heroes-list {
+    list-style: none;
+    text-align: left;
+    font-size: small;
 }
 
-#monsters #monsters-list
-{
-  list-style: none;
-  text-align: left;
-  font-size: small;
-	padding: 5px;
-	margin: 10px 15px auto;
+#monsters #monsters-list {
+    list-style: none;
+    text-align: left;
+    font-size: small;
+    padding: 5px;
+    margin: 10px 15px auto;
 }
 
-#monsters #monsters-thumbnail
-{
- margin: 10px 5px 5px auto;
- padding: 5%;
+#monsters #monsters-list li{
+   padding: 5px;
+
 }
 
-#heroes #heroes-thumbnail
-{
- margin: 10px 5px 5px auto;
- padding: 5%;
+#monsters #monsters-thumbnail {
+    margin: 10px 5px 5px auto;
+    padding: 5%;
+}
+
+#heroes #heroes-thumbnail {
+    margin: 10px 5px 5px auto;
+    padding: 5%;
+}
+
+#abilities-list {
+    list-style: none;
+    display: inline;
+
+}
+
+#abilities-list li{
+    padding: 5px;
 }

@@ -1,15 +1,21 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard extends MY_BaseController {
+/**
+ * Dashboard extends from a core controller base
+ * Class Dashboard
+ */
+class Dashboard extends MY_BaseController
+{
 
 
-	public function index()
-	{
-		$data['tittle'] = 'Me la pelan';
+    public function index()
+    {
+        $data['tittle'] = 'Me la pelan';
 
-    $this->load->view('templates/main' , $data);
+        //It loads the main view
+        $this->load->view('templates/main', $data);
 
 
-	}
+    }
 }

@@ -13,10 +13,18 @@ class MY_BaseController extends CI_Controller
     //load layout
 
     $this->load->view('templates/header.php');
-    $this->load->view('templates/footer.php');
+
 
 
 
 
   }
+
+  function  __destruct()
+  {
+      // TODO: Implement __destruct() method.
+
+      $this->load->view('templates/footer.php');
+  }
+
 }

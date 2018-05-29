@@ -73,11 +73,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+/**
+ * Database configs
+ */
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'social_r',
-	'password' => '123456',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'rpg_tool_kit',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
